@@ -98,10 +98,12 @@ def get_captions_list_sampling_1(data):
 
 
 if __name__ == '__main__':
-    test_feat_path = sys.argv[1]
-    test_feature_dir = os.path.join(test_feat_path, "/feat")
-    test_text_path = os.path.join(test_feat_path, "/testing_label.json")
 
+    test_feat_path = sys.argv[1]
+    test_feature_dir = os.path.join(test_feat_path, "feat")
+    test_text_path = os.path.join(test_feat_path, "testing_label.json")
+    # print(test_feat_path)
+    # print(test_text_path)
     # train_text_path = "./captions/training_label.json"
     # train_feature_dir = "./feature_dirs_training"
     # test_text_path = "./captions/testing_label.json"

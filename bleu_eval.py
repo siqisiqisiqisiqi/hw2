@@ -109,7 +109,7 @@ def BLEU(s,t,flag = False):
 if __name__ == "__main__" :
     test_feat_path = sys.argv[1]
     caption_test_path = sys.argv[2]
-    test_text_path = os.path.join(test_feat_path, "/testing_label.json")
+    test_text_path = os.path.join(test_feat_path, "testing_label.json")
     test = json.load(open(test_text_path, 'r'))
     output = caption_test_path
     result = {}

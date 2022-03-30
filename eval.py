@@ -27,9 +27,11 @@ with open('./Processed_data/word2idx.pkl', 'rb') as word2idx_file:
 with open('./Processed_data/idx2word.pkl', 'rb') as idx2word_file:
     idx2word = pickle.load(idx2word_file)
 
+
+
 def test(model, dataset):
 
-    caption_test_path = sys.argv[2]
+    caption_test_path = sys.argv[1]
     model.eval()
     loader = DataLoader(dataset, batch_size=32, shuffle=False)
     sentence_dic = []
